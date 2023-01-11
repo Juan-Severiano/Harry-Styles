@@ -1,0 +1,496 @@
+@font-face {
+    font-family: 'harry-styles';
+    src: url(HowardThin-Regular/Howthin_.ttf) format(truetype);
+}
+*{
+    font-family: 'harry-styles';
+}
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #cf370d;
+    font-family: 'harry-styles';
+}
+
+#container {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+}
+
+#container.fixed {
+    position: fixed;
+}
+
+#head {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 20px 20px 20px;
+    text-transform: uppercase;
+    display: block;
+    background-color: rgb(10, 10, 10);
+}
+
+#head.fixed {
+    position: fixed;
+    z-index: 200;
+    width: 100vw;
+}
+
+#head #logo {
+    font-size: 80px;
+    font-family: 'harry-styles';
+    font-weight: normal;
+    font-style: normal;
+    margin: 0;
+}
+
+#head #logo a {
+    color: #cf4520;
+    text-decoration: none;
+}
+
+#nav {
+    position: absolute;
+    right: 30px;
+    top: 20px;
+}
+
+#nav a {
+    font-size: 30px;
+    color: #cf4520;
+    text-decoration: none;
+    display: inline-block;
+    padding: 3px 12px;
+    border-radius: 23px;
+    transition: all 200ms ease-in;
+}
+
+#nav a+a {
+    margin-left: 30px;
+}
+
+/**/
+#home .content {
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+    padding: 0 35px;
+    margin: 45px auto;
+    max-width: 1250px;
+}
+
+#home #detail,
+#home #cover {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 49%;
+    vertical-align: middle;
+}
+
+#home #detail {
+    width: 50%;
+}
+
+#home #cover {
+    text-align: center;
+}
+
+#home #cover img {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+}
+
+#detail {
+    text-align: center;
+    padding-left: 25px;
+}
+
+#detail .headline {
+    font-size: 73px;
+    font-family: 'harry-styles', sans-serif;
+    text-transform: none;
+    margin-bottom: 0;
+    margin-top: 0;
+    letter-spacing: -2px;
+}
+
+#detail p {
+    font-size: 25px;
+}
+
+#detail .tagline {
+    margin-top: 5px;
+    font-family: 'harry-styles', sans-serif;
+    margin-bottom: 10px;
+}
+
+/**/
+#asitwas-wrapper,
+.single-wrapper {
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+#release,
+#asitwas-video,
+#asitwas-detail,
+.single-video,
+.single-detail {
+    display: inline-block;
+    box-sizing: border-box;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#asitwas-detail,
+.single-detail {
+    padding: 40px 25px;
+    text-align: center;
+    width: 51%;
+    max-width: 600px;
+}
+
+#asitwas-video,
+.single-video {
+    width: 48%;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+    position: relative;
+}
+
+#asitwas-video img,
+.single-video img {
+    width: 100%;
+    height: auto;
+    max-width: 550px;
+}
+
+#asitwas-video .play,
+.single-video .play {
+    font-size: 2.3rem;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 5px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(207, 69, 32, .8);
+    z-index: 10;
+    transition: all 200ms ease-in;
+}
+
+#asitwas-video a:hover .play,
+.single-video a:hover .play {
+    color: rgba(255, 255, 255, .6);
+}
+
+#release a {
+    color: #cf4520;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 200ms ease-in;
+}
+
+#release a:hover,
+#social a:hover {
+    text-shadow: 2px 2px #cf4520;
+    color: #fff;
+}
+
+#release a svg {
+    fill: #cf4520;
+    width: 43px;
+    height: auto;
+    vertical-align: bottom;
+    transition: all 200ms ease-in;
+}
+
+#release a svg:hover {
+    filter: drop-shadow(2px 2px #cf4520);
+    fill: #fff;
+}
+
+#release #dsps {
+    font-size: 35px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+#release #dsps a+a:not(.cta) {
+    margin-left: 8px;
+}
+
+#release #dsps .cta {
+    width: 230px;
+    font-size: 19px;
+    margin-bottom: 5px;
+}
+
+#release #dsps .cta+.cta {
+    margin-left: 3px;
+}
+
+#asitwas-detail .title,
+.single-detail .title {
+    font-size: 62px;
+    line-height: 55px;
+    margin: 0;
+}
+
+#asitwas-detail .available,
+.single-detail .available {
+    font-size: 23px;
+    margin: 17px auto 0 auto;
+    max-width: 225px;
+    transition: all 200ms ease-in;
+}
+
+/**/
+.featured-video {
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 80px 40px;
+}
+
+.featured-video .headline {
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.youtube-video-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 775px;
+    margin: auto;
+}
+
+.youtube-video-container::after {
+    display: block;
+    content: "";
+    padding-top: 56.25%;
+}
+
+.youtube-video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#footer {
+    font-size: .8rem;
+    text-transform: uppercase;
+    color: #d5d2d2;
+    width: 100%;
+    box-sizing: border-box;
+    /* border-top: solid 12px #b29700; */
+    text-align: center;
+    background-color: rgb(10, 10, 10);
+    height: 5rem;
+    padding: 1rem;
+}
+#footer a:hover{
+    color: #fff;
+}
+
+#footer a {
+    color: #d5d2d2;
+    margin: 0 3px;
+    text-decoration: none;
+}
+
+/* #footer .border {
+    width: 100%;
+    height: 12px;
+    background-color: #b42e09;
+    display: block;
+} */
+
+#footer .text {
+    padding: 12px 18px;
+}
+
+/**/
+.cta {
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+    border-radius: 28px;
+    padding: 8px 12px;
+    color: #cf4520;
+    text-decoration: none;
+    font-size: 22px;
+    display: block;
+    margin: 0 auto 14px auto;
+    border: solid 1px #cf4520;
+    transition: all 200ms ease-in;
+    cursor: pointer;
+}
+
+#nav a:hover{
+    background-color: #ab2c09 !important;
+    color: #fff !important;
+}
+
+@media (max-width:1040px) {
+
+    #asitwas-video,
+    #asitwas-detail,
+    .single-video,
+    .single-detail {
+        width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #lnt-wrapper {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .featured-video {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+@media (max-width:1030px) {
+    #logo {
+        text-align: center;
+    }
+
+    #nav {
+        width: 100%;
+        text-align: center;
+        right: 0;
+        top: 95px;
+    }
+
+    #nav a {
+        font-size: 20px;
+    }
+
+    #nav a+a {
+        margin-left: 55px;
+    }
+
+    #home #detail,
+    #home #cover,
+    #release,
+    #asitwas-video,
+    #asitwas-detail,
+    .single-detail,
+    .single-video {
+        width: 100%;
+        display: block;
+    }
+
+    #home #detail {
+        margin-top: 40px;
+        padding: 0px;
+    }
+
+    #detail .headline {
+        font-size: 54px;
+    }
+
+    #release a {
+        margin-bottom: 10px;
+    }
+
+    #release .cta+.cta {
+        margin-left: auto;
+    }
+
+    #release #dsps .cta {
+        display: block;
+        margin-bottom: 10px;
+        margin-left: auto !important;
+        margin-right: auto;
+    }
+}
+
+@media(max-width:550px) {
+    #nav {
+        top: 75px;
+    }
+
+    #home .content {
+        margin-bottom: 0;
+        padding-left: 19px;
+        padding-right: 19px;
+    }
+
+    #head #logo {
+        font-size: 55px;
+    }
+
+    #head.fixed {
+        height: 110px;
+    }
+
+    #logo span {
+        margin: 0 auto 10px auto;
+    }
+
+    #head {
+        padding-bottom: 0;
+    }
+
+    #tour.open {
+        padding-top: 180px !important;
+    }
+
+    /**/
+
+    #release #dsps {
+        font-size: 28px;
+    }
+
+    #release #dsps a+a:not(.cta) {
+        margin-left: 3px;
+    }
+
+    #release #dsps svg {
+        width: 33px;
+    }
+
+    /**/
+    .featured-video .headline {
+        font-size: 36px;
+    }
+
+    #asitwas-detail .title,
+    .single-detail .title {
+        font-size: 50px;
+    }
+}
+
+@media(max-width:360px) {
+    #release #dsps a:not(.cta) {
+        display: none;
+    }
+}
+
