@@ -3,4 +3,4 @@
  FrontEnd - Juan
  BackEnd - Michel
  
- https://harrystylesj.netlify.app
+ https://hstylesj.netlify.app
